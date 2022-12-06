@@ -105,9 +105,3 @@ deploy:
   type: 'git'
   repo: git@github.com:SuuuuuuY/suy.github.io.git
   branch: master
-
-favicon:
-  small: /images/favicon-16x16.png
-  medium: /images/favicon-32x32.png
-  apple_touch_icon: /images/apple_touch_icon.png
-  safari_pinned_tab: /images/safari_pinned_tab.svg
