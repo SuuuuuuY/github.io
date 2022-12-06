@@ -285,6 +285,29 @@
         </nav>
     
     
+        <link rel="stylesheet" href="/vendors/gitalk@1.7.2/dist/gitalk.css"></script>
+<div id="gitalk-container" class="post-comments lazy-load" style="padding-left:2rem; padding-right:2rem;"></div>
+<script>
+    var load_comm = () => {
+        const init = () => {
+            console.log('Gitalk loading...');
+            const gitalk = new Gitalk(Object.assign({
+                id: '/2022/12/02/hello-world/',
+                path: '/2022/12/02/hello-world/'
+            }, JSON.parse('{"clientID":"5f43b5cff211942e5df5","clientSecret":"4da3b797bdf89b4150cda1d41b576b5c8e93bf1e","repo":"suuuuuuy.github.io","owner":"SuuuuuuY","admin":["Candinya","SuuuuuuY"],"distractionFreeMode":false}')));
+
+            gitalk.render('gitalk-container');
+        }
+        if (typeof Gitalk === 'undefined') {
+            const src = '/vendors/gitalk@1.7.2/dist/gitalk.min.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://github.com/gitalk/gitalk">comments powered by Gitalk.</a></noscript>
+    
 </article>
 
         
